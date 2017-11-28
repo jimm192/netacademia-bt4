@@ -48,35 +48,40 @@
       </nav>
     </header>
 
-    <main role="main">
-
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>Marketing stuff!</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+  <div class="row justify-content-center  row-login-form">
+    <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+      <div class="alert alert-primary alert-dismissible fade show" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        Jelentkezz be...
       </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+      <div class="card border-secondary">  
+        <div class="card-header">Bejelentkezés</div>
+        <div class="card-body text-secondary">
+          <form>
+              <div class="form-group">
+                <label for="loginEmail">Email cím</label>
+                <input name="loginEmail" type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="E-mail cím">
+                <small id="emailHelp" class="form-text text-muted">Senkinek nem adjuk oda a jelszavakat!</small>
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Jelszó</label>
+                <input name="loginPassword" type="password" class="form-control" id="loginPassword" placeholder="Jelszó">
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input name="rememberMe" type="checkbox" class="form-check-input">
+                  Bejelentkezve maradok
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Bejelentkezés</button>
+            </form>
+          <p class="card-text"></p>
         </div>
       </div>
-
-    </main>
+    </div>
+  </div>
 
     <!-- Site footer -->
     <footer class="footer">
@@ -89,7 +94,7 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="lib/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="lib/jquery-3.2.1.slim.min.js"></script>
   <script src="lib/popper.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
